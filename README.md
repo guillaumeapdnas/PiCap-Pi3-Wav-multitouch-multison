@@ -1,14 +1,14 @@
 # PiCap-Pi3-Wav-multitouch-multison
 Ce projet propose une interface graphique pour configurer et déclencher des sons via des électrodes capacitives (MPR121 via PiCap) sur Raspberry Pi3.
-Il permet de configurer les plages de seuils capacitives d’un capteur MPR121 (via la Pi-Cap) pour jouer des sons avec Pygame. Chaque électrode peut jouer jusqu’à 12 sons selon des plages de différence de mesure.
+Il permet de configurer les plages de seuils capacitives d’un capteur MPR121 (via la Pi-Cap) pour jouer des sons avec Pygame. Chaque électrode peut jouer X sons selon des plages de différence de mesure.
 
-Cette interface graphique propose de :
-    •    Changer la sensibilité des capteurs
-    •    Configurer les plages de seuils de chaque son pour chaque électrode
-    •    Case de synchronisation sous chacune des colonnes : Si aucun intervalle différent entre les électrodes, la valeur S de E0 est reprise pour l'ensemble de la colonne
-    •    Sauvegarder/charger la configuration via un fichier JSON
-    •    Activer/désactiver la lecture des sons
-    •    Contrôler le volume global
+Cette interface graphique propose de :  
+    •    Changer la sensibilité des capteurs  
+    •    Configurer les plages de seuils de chaque son pour chaque électrode  
+    •    Case de synchronisation sous chacune des colonnes : Si aucun intervalle différent entre les électrodes, la valeur S de E0 est reprise pour l'ensemble de la colonne  
+    •    Sauvegarder/charger la configuration via un fichier JSON  
+    •    Activer/désactiver la lecture des sons  
+    •    Contrôler le volume global  
 
 ** Matériels **  
           ⁃    Raspberry Pi 3  
@@ -30,7 +30,7 @@ Cette interface graphique propose de :
 
 ``picap-setup``
 
-Le script picap-setup configure automatiquement les bons GPIOs pour la Pi-Cap.
+Le script picap-setup configure automatiquement les bons GPIOs pour la Pi-Cap
 
 **4-installation des dépendances Python** 
 
@@ -39,7 +39,7 @@ Le script picap-setup configure automatiquement les bons GPIOs pour la Pi-Cap.
 ``pip install mpr121``
 
 **5-Arborescence des fichiers sons**
-Chaque dossier E0 à E11 contient jusqu'à 12 fichiers .wav nommés 000.wav à 011.wav.
+Chaque dossier E0 à E11 contient jusqu'à 12 fichiers .wav nommés 000.wav à 011.wav
 .
 
 ```
@@ -64,6 +64,7 @@ Vous pouvez sauvegarder la configuration actuelle dans un fichier ``.json``, ou 
 
 Le fichier contient :
 
+```
 {
   "touch_threshold": 40,
   "release_threshold": 20,
@@ -72,4 +73,4 @@ Le fichier contient :
     ...
   ]
 }
-
+```
