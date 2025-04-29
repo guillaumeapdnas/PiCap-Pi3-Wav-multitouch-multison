@@ -1,14 +1,18 @@
 # PiCap-Pi3-Wav-multitouch-multison
 Ce projet propose une interface graphique pour configurer et déclencher des sons via des électrodes capacitives (MPR121 via PiCap) sur Raspberry Pi3.
-Il permet de configurer les plages de seuils capacitives d’un capteur MPR121 (via la Pi-Cap) pour jouer des sons avec Pygame. Chaque électrode peut jouer X sons selon des plages de différence de mesure.
+  
+  Il permet de configurer les plages de seuils capacitives d’un capteur MPR121 (via la Pi-Cap) pour jouer des sons avec Pygame.
+ 
+  Chaque électrode peut jouer X sons selon des plages de différence de mesure.
 
-Cette interface graphique propose de :  
-    •    Changer la sensibilité des capteurs  
-    •    Configurer les plages de seuils de chaque son pour chaque électrode  
-    •    Case de synchronisation sous chacune des colonnes : Si aucun intervalle différent entre les électrodes, la valeur S de E0 est reprise pour l'ensemble de la colonne  
-    •    Sauvegarder/charger la configuration via un fichier JSON  
-    •    Activer/désactiver la lecture des sons  
-    •    Contrôler le volume global  
+Cette interface graphique propose de :\
+\
+    •    Changer la sensibilité des capteurs\
+    •    Configurer les plages de seuils de chaque son pour chaque électrode\
+    •    Case de synchronisation sous chacune des colonnes : Pour reporter la valeur S[] de E0 pour l'ensemble de la colonne  \
+    •    Sauvegarder/charger la configuration via un fichier ``.JSON``\
+    •    Activer/désactiver la lecture des sons\
+    •    Contrôler le volume global
 
 ** Matériels **  
           ⁃    Raspberry Pi 3  
