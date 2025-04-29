@@ -10,12 +10,15 @@ Ce projet sur Raspberry Pi3 propose une interface graphique pour configurer et d
 
 Cette interface graphique propose de :\
 \
-    •    Changer la sensibilité des capteurs\
-    •    Configurer les plages de seuils de chaque son pour chaque électrode\
-    •    Case de synchronisation sous chacune des colonnes : Pour reporter la valeur S[] de E0 pour l'ensemble de la colonne  \
-    •    Sauvegarder/charger la configuration via un fichier ``.JSON``\
-    •    Activer/désactiver la lecture des sons\
-    •    Contrôler le volume global
+          •    Changer la sensibilité des capteurs\
+          •    Sauvegarder/charger la configuration via un fichier ``.JSON`` \
+          •    Activer/désactiver la lecture des sons\
+          •    Label d'état "Lecture: ON" ou "OFF" en vert ou rouge\
+          •    Contrôler le volume global\        
+          •    Configurer les plages de seuils de chaque son pour chaque électrode\
+          •    Case de synchronisation sous chacune des colonnes : Pour reporter la valeur S[] de E0 pour l'ensemble de la colonne  \
+          •    Voir la cellule active (Plage active//son joué) en vert en fonction de la valeur à l'électrode \
+
 
 **1-Installation du système d’exploitation Raspbian**
 
