@@ -1,9 +1,7 @@
 # PiCap-Pi3-Wav-multitouch-multison
-Ce projet propose une interface graphique pour configurer et déclencher des sons via des électrodes capacitives (MPR121 via PiCap) sur Raspberry Pi3.
-  
-  Il permet de configurer les plages de seuils capacitives d’un capteur MPR121 (via la Pi-Cap) pour jouer des sons avec Pygame.
- 
-  Chaque électrode peut jouer X sons selon des plages de différence de mesure.
+Ce projet propose une interface graphique pour configurer et déclencher des sons via des électrodes capacitives (MPR121 via PiCap) sur Raspberry Pi3 en fonction des intervalles désirées. Chaque électrode peut jouer 12 sons (+si besoin) selon d.
+
+![PiCap-Pi3-Wav-multitouch-multison.png](https://github.com/guillaumeapdnas/PiCap-Pi3-Wav-multitouch-multison/blob/main/PiCap-Pi3-Wav-multitouch-multison.png)
 
 Cette interface graphique propose de :\
 \
