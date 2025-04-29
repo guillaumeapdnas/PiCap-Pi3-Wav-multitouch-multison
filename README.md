@@ -1,5 +1,5 @@
 # PiCap-Pi3-Wav-multitouch-multison
-Ce projet propose une interface graphique pour configurer et déclencher des sons via des électrodes capacitives (MPR121 via PiCap) sur Raspberry Pi3 en fonction des intervalles désirées. Chaque électrode peut jouer 12 sons (+si besoin) selon d.
+Ce projet sur Raspberry Pi3 propose une interface graphique pour configurer et déclencher des sons en simultanée via les mesures aux électrodes capacitives (MPR121 via PiCap) et en fonction des intervalles désirées.
 
 ![PiCap-Pi3-Wav-multitouch-multison.png](https://github.com/guillaumeapdnas/PiCap-Pi3-Wav-multitouch-multison/blob/main/PiCap-Pi3-Wav-multitouch-multison.png)
 
