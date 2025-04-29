@@ -1,6 +1,11 @@
 # PiCap-Pi3-Wav-multitouch-multison
 Ce projet sur Raspberry Pi3 propose une interface graphique pour configurer et déclencher des sons en simultanée via les mesures aux électrodes capacitives (MPR121 via PiCap) et en fonction des intervalles désirées.
 
+** Matériels **  
+          ⁃    Raspberry Pi 3  
+          ⁃    PiCap BareConductive
+
+
 ![PiCap-Pi3-Wav-multitouch-multison.png](https://github.com/guillaumeapdnas/PiCap-Pi3-Wav-multitouch-multison/blob/main/PiCap-Pi3-Wav-multitouch-multison.png)
 
 Cette interface graphique propose de :\
@@ -11,10 +16,6 @@ Cette interface graphique propose de :\
     •    Sauvegarder/charger la configuration via un fichier ``.JSON``\
     •    Activer/désactiver la lecture des sons\
     •    Contrôler le volume global
-
-** Matériels **  
-          ⁃    Raspberry Pi 3  
-          ⁃    PiCap BareConductive
 
 **1-Installation du système d’exploitation Raspbian**
 
