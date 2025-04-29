@@ -1,1 +1,75 @@
 # PiCap-Pi3-Wav-multitouch-multison
+Ce projet propose une interface graphique pour configurer et déclencher des sons via des électrodes capacitives (MPR121 via PiCap) sur Raspberry Pi3.
+Il permet de configurer les plages de seuils capacitives d’un capteur MPR121 (via la Pi-Cap) pour jouer des sons avec Pygame. Chaque électrode peut jouer jusqu’à 12 sons selon des plages de différence de mesure.
+
+Cette interface graphique propose de :
+    •    Changer la sensibilité des capteurs
+    •    Configurer les plages de seuils de chaque son pour chaque électrode
+    •    Case de synchronisation sous chacune des colonnes : Si aucun intervalle différent entre les électrodes, la valeur S de E0 est reprise pour l'ensemble de la colonne
+    •    Sauvegarder/charger la configuration via un fichier JSON
+    •    Activer/désactiver la lecture des sons
+    •    Contrôler le volume global
+
+** Matériels **  
+          ⁃    Raspberry Pi 3  
+          ⁃    PiCap BareConductive
+
+**1-Installation du système d’exploitation Raspbian**
+
+**2-Mise à jour du Rasp**
+
+``sudo apt-get update``
+
+``sudo apt-get dist-upgrade``
+
+``sync && sudo reboot``
+
+**3-Installation du paquet PiCap**
+
+``sudo apt-get install picap``
+
+``picap-setup``
+
+Le script picap-setup configure automatiquement les bons GPIOs pour la Pi-Cap.
+
+**4-installation des dépendances Python** 
+
+``pip install pygame``
+
+``pip install mpr121``
+
+**5-Arborescence des fichiers sons**
+Chaque dossier E0 à E11 contient jusqu'à 12 fichiers .wav nommés 000.wav à 011.wav.
+.
+
+```
+├── diff_sound_player_V2.py
+├── MPR121.py
+├── tracks/
+│   ├── E0/
+│   │   ├── 000.wav
+│   │   ├── ...
+│   ├── E1/
+│   │   ├── ...
+│   └── ...
+└── config.json (optionnel, généré à l'utilisation)
+```
+
+**6-Lancer le programme**
+
+``python3 diff_sound_player_V2.py ``
+
+**7- Configuration**
+Vous pouvez sauvegarder la configuration actuelle dans un fichier ``.json``, ou en charger un existant.
+
+Le fichier contient :
+
+{
+  "touch_threshold": 40,
+  "release_threshold": 20,
+  "plages": [
+    [1, 20, 21, 40, ...],  // Pour E0
+    ...
+  ]
+}
+
